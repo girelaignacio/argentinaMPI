@@ -54,5 +54,5 @@ data$Country <- as.factor(data$Country)
 data$`World Region` <- as.factor(data$`World Region`)
 data$ARG <- ifelse(data$ISO == "ARG", "yes", "no")
 
-# Algo
-
+# Save data
+save(data, file = "data.RData")
